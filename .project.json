@@ -11,12 +11,14 @@
       "dateTimeStamp": "Thu, 23 Jul 2020 11:08:41 GMT"
     }
   ],
-  "build":{
-  	"targetFolder": "dist",
-  	"sourceFolder": "wedapp",
-  	"excludedFolders": [],
-  	"excludedFiles": ["index.html"],
-  	"buildRequired": true
+  "build": {
+    "targetFolder": "dist",
+    "sourceFolder": "wedapp",
+    "excludedFolders": [],
+    "excludedFiles": [
+      "index.html"
+    ],
+    "buildRequired": true
   },
   "mockpreview": {
     "mockUri": "/sap/opu/odata/sap/ZODATA_F_SRV",
