@@ -1,0 +1,62 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="pcs.hr.payroll.controller.View1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+		<Page title="Page 1">
+			<!--<headerContent>-->
+			<!--	<Button icon="sap-icon://action" press="onNext"></Button>-->
+			<!--</headerContent>-->
+			<customHeader>
+				<Toolbar>
+					<SearchField id="idSearch" search="onSearch" liveChange="onSearch" />
+				</Toolbar>
+			</customHeader>
+			<content>
+				<List mode="SingleSelectMaster" items="{/ProductSet}" id="idList" growing="true" growingThreshold="5" 
+				     delete="onDelete" selectionChange="onItemPress">
+				      <!--path: '/fruits', -->
+				      <!--sorter:{-->
+				      <!--    path: 'type',-->
+				      <!--    group: true-->
+				      <!--}-->
+				      <!--}" -->
+					<items>
+						<ObjectListItem intro="{DESCRIPTION}" title ="{NAME}"  
+						  number="{PRICE}" numberUnit="{CURRENCY_CODE}">
+							<attributes>
+								<ObjectAttribute text="{CATEGORY}"></ObjectAttribute>
+							</attributes>
+							<firstStatus>
+								<ObjectStatus text="{SUPPLIER_ID}"></ObjectStatus>
+							</firstStatus>
+						</ObjectListItem>
+						<!--<DisplayListItem label="Apple" value="Antibiotic for health"></DisplayListItem>-->
+						<!--<StandardListItem icon="https://images-na.ssl-images-amazon.com/images/I/61fZ%2BYAYGaL._SL1500_.jpg" -->
+						<!--                  title="Banana" description="High source of potasium"></StandardListItem>-->
+						<!--<InputListItem>-->
+				  <!--          <HBox>-->
+						<!--		<Label text="How many pinnaple you want"></Label>-->
+						<!--		<Input></Input>-->
+						<!--	</HBox>-->
+						<!--</InputListItem>   -->
+						<!--<CustomListItem>-->
+						<!--	<Text text="Do you want Cash on delivery?"></Text>-->
+						<!--	<Switch></Switch>-->
+						<!--</CustomListItem>-->
+						<!--<ObjectListItem title="Blueberries" intro="Are Low in Calories But high in nutrition"-->
+						<!--   icon="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/proven-benefits-of-blueberries-1296x728-feature.jpg"-->
+						<!--   number="1500 INR" numberUnit="Per Kg">-->
+						<!--</ObjectListItem>-->
+						<!--<FeedListItem icon="https://cdn.cnn.com/cnnnext/dam/assets/200311211631-donald-trump-oval-office-march-11-2020-04-full-169.jpg"-->
+						<!--    sender="Donald Trump" text="Hey Tarang, Happy New Year 2020!" timestamp="Jan 1st 2020">-->
+						<!--</FeedListItem>   -->
+						<!--<ActionListItem text="Order Now!"></ActionListItem>-->
+					</items>
+				</List>
+			</content>
+			<footer>
+				<Toolbar>
+					<ToolbarSpacer />
+					<Button icon="sap-icon://add" tooltip="Add New Button" press="onAdd"></Button> 
+				</Toolbar>
+			</footer>
+		</Page>
+</mvc:View>

@@ -1,0 +1,21 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+    controllerName="pcs.hr.payroll.controller.View3"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Supplier Data" showNavButton="true" navButtonPress="onBackPress">
+		<content>
+			<ObjectHeader intro="{location}" title ="{name}"></ObjectHeader>
+			<f:SimpleForm>
+				<f:content>
+					<Label text="Name"></Label>
+					<Text text="{name}"></Text>
+					<Label text="Location"></Label>
+					<Text text="{location}"></Text>
+					<Label text="City"></Label>
+					<Text text="{city}"></Text>
+					<Label text="Since When"></Label>
+					<Text text="{since_when}"></Text>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+	</Page>
+</mvc:View>

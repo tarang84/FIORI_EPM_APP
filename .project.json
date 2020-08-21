@@ -1,0 +1,32 @@
+{
+  "generation": [
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationComponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Wed, 29 Jul 2020 08:50:21 GMT"
+    },
+    {
+      "templateId": "servicecatalog.connectivityComponent",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Thu, 23 Jul 2020 11:08:41 GMT"
+    }
+  ],
+  "build":{
+  	"targetFolder": "dist",
+  	"sourceFolder": "wedapp",
+  	"excludedFolders": [],
+  	"excludedFiles": ["index.html"],
+  	"buildRequired": true
+  },
+  "mockpreview": {
+    "mockUri": "/sap/opu/odata/sap/ZODATA_F_SRV",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "deploy": {
+    "destination": "S4D",
+    "name": "ZFIORI_PRD_APP"
+  }
+}
